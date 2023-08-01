@@ -9,6 +9,14 @@ public class Node<T> implements NodeInterface<T> {
 
   private T object;
 
+  public Node() {
+    this.object = null;
+  }
+
+  public Node(T object) {
+    this.object = object;
+  }
+
   @Override
   public boolean setObject(T object) {
     try {
