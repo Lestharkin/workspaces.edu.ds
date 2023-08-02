@@ -1,4 +1,4 @@
-package edu.mockobject;
+package edu.lesth.mockobject;
 
 public class MockObject {
 
@@ -42,4 +42,3 @@ public class MockObject {
     this.charArray = charArray;
   }
 }
-

@@ -1,6 +1,8 @@
-package edu.interfaces.linkedlist;
+package edu.lesth.interfaces.linkedlist;
 
-import edu.interfaces.node.NodeInterface;
+import java.util.Iterator;
+
+import edu.lesth.interfaces.node.NodeInterface;
 
 /**
  * Interface for Linked List

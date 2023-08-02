@@ -1,9 +1,9 @@
-package edu.nodes;
+package edu.lesth.nodes;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import edu.interfaces.node.NodeInterface;
+import edu.lesth.interfaces.node.NodeInterface;
 
 public class Node<T> implements NodeInterface<T> {
 
@@ -19,13 +19,15 @@ public class Node<T> implements NodeInterface<T> {
 
   @Override
   public boolean setObject(T object) {
-    try {
-      this.object = object; 
-      return true;     
-    } catch (Exception e) {
-      Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
-      return false;
+    if (object != null) {
+      try {
+        this.object = object;
+        return true;
+      } catch (Exception e) {
+        Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+      }
     }
+    return false;
   }
 
   @Override
@@ -60,7 +62,5 @@ public class Node<T> implements NodeInterface<T> {
   public String toString() {
     return "Node [object=" + object + "]";
   }
-  
-  
 
 }
