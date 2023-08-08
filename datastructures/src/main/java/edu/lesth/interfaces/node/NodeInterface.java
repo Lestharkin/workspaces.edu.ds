@@ -1,4 +1,4 @@
-package edu.interfaces.node;
+package edu.lesth.interfaces.node;
 
 /**
  * Interface for Node. 

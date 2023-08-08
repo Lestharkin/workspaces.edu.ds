@@ -1,6 +1,19 @@
-package edu.singly.linked;
+package edu.lesth.singly.linked;
 
 import java.util.Iterator;
+<<<<<<< HEAD:datastructures/src/main/java/edu/lesth/singly/linked/SinglyLinkedList.java
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import edu.lesth.interfaces.linkedlist.LinkedListInterface;
+import edu.lesth.interfaces.node.NodeInterface;
+import edu.lesth.nodes.SinglyLinkedNode;
+
+public class SinglyLinkedList<T> implements LinkedListInterface<T> {
+
+  private SinglyLinkedNode<T> head;
+  private SinglyLinkedNode<T> tail;
+=======
 import java.util.NoSuchElementException;
 
 import edu.interfaces.linkedlist.LinkedListInterface;
@@ -12,59 +25,60 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
   private SinglyListNode<T> head;
   private SinglyListNode<T> tail;
   private SinglyListNode<T> inode;
+>>>>>>> 8f0ce93 (sync):linkedlist/src/main/java/edu/singly/linked/SinglyLinkedList.java
   private int size;
 
   @Override
   public boolean add(T object) {
-    if(object != null) {
-        try {
-          if(isEmpty()){
-            tail = head = new SinglyListNode<>(object);
-          } else {
-            tail.setNext(new SinglyListNode<>(object));
-            tail = tail.getNext();
-          }
-          size++;
-          return true;
-        } catch (Exception e) {
-          // TODO: handle exception
+    if (object != null) {
+      try {
+        if (isEmpty()) {
+          tail = head = new SinglyLinkedNode<>(object);
+        } else {
+          tail.setNext(new SinglyLinkedNode<>(object));
+          tail = tail.getNext();
         }
+        size++;
+        return true;
+      } catch (Exception e) {
+        Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+      }
     }
     return false;
   }
 
   @Override
-  public boolean add(NodeInterface node, Object object) {
+  public boolean add(NodeInterface<T> node, T object) {
     // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'add'");
+    throw new UnsupportedOperationException("Unimplemented method 'add1'");
   }
 
   @Override
-  public boolean add(NodeInterface node, NodeInterface next) {
+  public boolean add(NodeInterface<T> node, NodeInterface<T> next) {
     // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'add'");
+    throw new UnsupportedOperationException("Unimplemented method 'add2'");
   }
 
   @Override
-  public boolean add(Object[] objects) {
+  public boolean add(T[] objects) {
     // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'add'");
+    throw new UnsupportedOperationException("Unimplemented method 'add3'");
   }
 
   @Override
-  public boolean add(NodeInterface node, Object[] objects) {
+  public boolean add(NodeInterface<T> node, T[] objects) {
     // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'add'");
+    throw new UnsupportedOperationException("Unimplemented method 'add4'");
   }
 
   @Override
-  public boolean addOnHead(Object object) {
+  public boolean addOnHead(T object) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'addOnHead'");
   }
 
   @Override
-  public boolean addOnHead(Object[] objects) {
+  public boolean addOnHead(T[] objects) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'addOnHead'");
   }
@@ -76,25 +90,25 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
   }
 
   @Override
-  public LinkedListInterface cloneList() {
+  public LinkedListInterface<T> cloneList() {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'cloneList'");
   }
 
   @Override
-  public boolean contains(Object object) {
+  public boolean contains(T object) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'contains'");
   }
 
   @Override
-  public boolean contains(Object[] objects) {
+  public boolean contains(T[] objects) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'contains'");
   }
 
   @Override
-  public NodeInterface nodeOf(Object object) {
+  public NodeInterface<T> nodeOf(T object) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'nodeOf'");
   }
@@ -105,61 +119,61 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
   }
 
   @Override
-  public Object get() {
+  public T get() {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'get'");
   }
 
   @Override
-  public Object[] get(int n) {
+  public T[] get(int n) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'get'");
   }
 
   @Override
-  public Object getPrevious(NodeInterface node) {
+  public T getPrevious(NodeInterface<T> node) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'getPrevious'");
   }
 
   @Override
-  public Object getFromEnd() {
+  public T getFromEnd() {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'getFromEnd'");
   }
 
   @Override
-  public Object[] getFromEnd(int n) {
+  public T[] getFromEnd(int n) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'getFromEnd'");
   }
 
   @Override
-  public Object pop() {
+  public T pop() {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'pop'");
   }
 
   @Override
-  public boolean remove(Object object) {
+  public boolean remove(T object) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'remove'");
   }
 
   @Override
-  public boolean remove(NodeInterface node) {
+  public boolean remove(NodeInterface<T> node) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'remove'");
   }
 
   @Override
-  public boolean removeAll(Object[] objects) {
+  public boolean removeAll(T[] objects) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'removeAll'");
   }
 
   @Override
-  public boolean retainAll(Object[] objects) {
+  public boolean retainAll(T[] objects) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'retainAll'");
   }
@@ -171,13 +185,13 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
   }
 
   @Override
-  public LinkedListInterface subList(NodeInterface from, NodeInterface to) {
+  public LinkedListInterface<T> subList(NodeInterface<T> from, NodeInterface<T> to) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'subList'");
   }
 
   @Override
-  public Object[] toArray() {
+  public T[] toArray() {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'toArray'");
   }
@@ -188,8 +202,12 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
     throw new UnsupportedOperationException("Unimplemented method 'sortObjectsBySize'");
   }
 
-  @Override  
+  @Override
   public Iterator<NodeInterface<T>> iterator() {
+<<<<<<< HEAD:datastructures/src/main/java/edu/lesth/singly/linked/SinglyLinkedList.java
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'iterator'");
+=======
     inode = head;
 
     return new Iterator<NodeInterface<T>>() {
@@ -207,6 +225,6 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
         return node;
       }
     };
+>>>>>>> 8f0ce93 (sync):linkedlist/src/main/java/edu/singly/linked/SinglyLinkedList.java
   }
-  
 }

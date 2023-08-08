@@ -1,6 +1,12 @@
-package edu.interfaces.linkedlist;
+package edu.lesth.interfaces.linkedlist;
 
+import java.util.Iterator;
+
+<<<<<<< HEAD:datastructures/src/main/java/edu/lesth/interfaces/linkedlist/LinkedListInterface.java
+import edu.lesth.interfaces.node.NodeInterface;
+=======
 import edu.interfaces.node.NodeInterface;
+>>>>>>> 8f0ce93 (sync):linkedlist/src/main/java/edu/interfaces/linkedlist/LinkedListInterface.java
 
 /**
  * Interface for Linked List
@@ -234,6 +240,6 @@ public interface LinkedListInterface<T> {
    * 
    * @return an iterator of the list or a null iterator if the list is empty.
    */
-  public Iterator<NodeInterface<T>> iterator();
+  public Iterator iterator();
 
 }
