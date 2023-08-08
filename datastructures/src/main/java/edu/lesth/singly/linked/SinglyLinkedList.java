@@ -1,6 +1,7 @@
 package edu.lesth.singly.linked;
 
 import java.util.Iterator;
+<<<<<<< HEAD:datastructures/src/main/java/edu/lesth/singly/linked/SinglyLinkedList.java
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -12,6 +13,19 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
 
   private SinglyLinkedNode<T> head;
   private SinglyLinkedNode<T> tail;
+=======
+import java.util.NoSuchElementException;
+
+import edu.interfaces.linkedlist.LinkedListInterface;
+import edu.interfaces.node.NodeInterface;
+import edu.nodes.SinglyListNode;
+
+public class SinglyLinkedList<T> implements LinkedListInterface<T> {
+
+  private SinglyListNode<T> head;
+  private SinglyListNode<T> tail;
+  private SinglyListNode<T> inode;
+>>>>>>> 8f0ce93 (sync):linkedlist/src/main/java/edu/singly/linked/SinglyLinkedList.java
   private int size;
 
   @Override
@@ -190,7 +204,27 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
 
   @Override
   public Iterator<NodeInterface<T>> iterator() {
+<<<<<<< HEAD:datastructures/src/main/java/edu/lesth/singly/linked/SinglyLinkedList.java
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'iterator'");
+=======
+    inode = head;
+
+    return new Iterator<NodeInterface<T>>() {
+
+      public boolean hasNext() {
+        return inode != null;
+      }
+
+      public NodeInterface<T> next() {
+        if (!hasNext()) {
+          throw new NoSuchElementException();
+        }
+        NodeInterface<T> node = inode;
+        inode = inode.getNext();
+        return node;
+      }
+    };
+>>>>>>> 8f0ce93 (sync):linkedlist/src/main/java/edu/singly/linked/SinglyLinkedList.java
   }
 }
