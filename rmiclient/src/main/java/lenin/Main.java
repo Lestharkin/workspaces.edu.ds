@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         Properties config = new Properties();
         try (FileInputStream fin = new FileInputStream(new File(
-                "/home/lestharkin/Projects/Workspaces/edu/ds/rmiclient/src/main/java/lenin/config.properties"))) {
+                "config.properties"))) {
             config.load(fin);
             Client client = new Client (
                     (String) config.get("IP"),

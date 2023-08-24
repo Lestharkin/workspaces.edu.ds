@@ -11,7 +11,7 @@ import java.util.Properties;
 public class Main {
     public static void main(String[] args) {
         Properties config = new Properties();
-        try (FileInputStream fin = new FileInputStream(new File("/home/lestharkin/Projects/Workspaces/edu/ds/rmiserver/src/main/java/lenin/config.properties"))) {
+        try (FileInputStream fin = new FileInputStream(new File("config.properties"))) {
             config.load(fin);
             Server server = new Server(
                     (String) config.get("IP"),
