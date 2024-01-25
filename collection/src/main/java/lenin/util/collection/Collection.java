@@ -1,5 +1,7 @@
 package lenin.util.collection;
 
+import lenin.util.iterable.Iterable;
+
 public interface Collection<E> extends Iterable<E> {
   /**
    * Removes all elements from the collection.
