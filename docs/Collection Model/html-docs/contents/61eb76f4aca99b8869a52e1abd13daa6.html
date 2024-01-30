@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Model</title>
+    <title>LinkedList</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,14 +19,14 @@
 
       <!-- Name Title -->
 
-      <h1>Model</h1>
+      <h1>LinkedList</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLModel"></span>
-          UMLModel
+          <span class="node-icon staruml-icon icon-UMLClass"></span>
+          UMLClass
         </span>
         
       </section>
@@ -43,6 +43,15 @@
           <span>::</span>
           <span class="label label-info"><a href='594af663de577680f35b13183109d675.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Model</a></span>
         
+          <span>::</span>
+          <span class="label label-info"><a href='7c977bb66eca3eea20e823b1d4d1cfdb.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>linkedlist</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='51c904f3124866d21b744254445d5402.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>singly</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='61eb76f4aca99b8869a52e1abd13daa6.html'><span class='node-icon staruml-icon icon-UMLClass'></span>LinkedList</a></span>
+        
       </section>
 
       <!-- Diagram -->
@@ -56,7 +65,7 @@
         <h3>Description</h3>
         <div>
           
-            <p>Collection design for data structure class</p>
+            <p>A singly linked list implementation of the CollectionInterface and ListInterface. This class provides methods to add, remove, and manipulate elements in the list. It also supports iteration and provides various utility methods.</p>
           
         </div>
       </section>
@@ -75,6 +84,35 @@
       
 
       <!-- Classifier -->
+
+      
+        
+        
+<section class="element-list">
+    <h3>Generalized Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='01b1b25f846ced953550eeed61469cc1.html'><span class='node-icon staruml-icon icon-UMLClass'></span>AbstractList</a></li>
+        
+    </ul>
+</section>
+
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
 
       
 
@@ -100,26 +138,6 @@
 
       <!-- Template Parameters -->
 
-      
-      <section>
-        <h3>Template Parameters</h3>
-        <table class="table table-striped table-bordered">
-          <tr>
-            <th>Visibility</th>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="7e72c50550224a49471900ab268482d3.html">E</a></td>
-            <td></td>
-            <td><p>&lt;E&gt; the type of elements in the collection.</p></td>
-          </tr>
-          
-        </table>
-      </section>
       
 
       <!-- Literals -->
@@ -149,22 +167,6 @@
       <!-- Diagrams -->
 
       
-      
-      <section class="element-list">
-        <h3>Diagrams</h3>
-        <div>
-          
-          <div style="display: inline-block; width: 250px; vertical-align: top;">
-            <div class="member">
-              <a href="a74bf0e3699da3f8e58beeb19b53e20a.html">
-                <img src="../diagrams/a74bf0e3699da3f8e58beeb19b53e20a.svg">
-                <div style="text-align: center; margin-top: 1em;">Main</div>
-              </a>
-            </div>
-          </div>
-          
-        </div>
-      </section>
       
 
       <!-- Behavior -->
@@ -246,7 +248,7 @@
     
     <tr>
         <td>name</td>
-        <td>Model</td>
+        <td>LinkedList</td>
     </tr>
     
     
@@ -279,11 +281,17 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
     <tr>
-        <td>importedElements</td>
-        <td>
-            
-        </td>
+        <td>isAbstract</td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     
@@ -291,8 +299,26 @@
     
     
     <tr>
-        <td>viewpoint</td>
-        <td></td>
+        <td>isFinalSpecialization</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isLeaf</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isActive</td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     
@@ -325,6 +351,17 @@
 
       
       
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='f80750cb960deed739c20c7c983792eb.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(LinkedList→AbstractList)</a></li>
+        
+        <li><a href='bf56d802b589bbd4574b619276504ea7.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(LinkedNode—LinkedList)</a></li>
+        
+    </ul>
+</section>
+
 
 
       <!-- Owned Elements -->
@@ -335,17 +372,7 @@
     <h3>Owned Elements</h3>
     <ul class="nav nav-list">
         
-        <li><a href='01b1b25f846ced953550eeed61469cc1.html'><span class='node-icon staruml-icon icon-UMLClass'></span>AbstractList</a></li>
-        
-        <li><a href='a74bf0e3699da3f8e58beeb19b53e20a.html'><span class='node-icon staruml-icon icon-UMLClassDiagram'></span>Main</a></li>
-        
-        <li><a href='7d78468b5f0914e2b400224e11c042c7.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>util</a></li>
-        
-        <li><a href='851e7955e791ec62d69eae6f9bc8f9bf.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>array</a></li>
-        
-        <li><a href='6a4390128372be387e5c2fb830606581.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>java</a></li>
-        
-        <li><a href='7c977bb66eca3eea20e823b1d4d1cfdb.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>linkedlist</a></li>
+        <li><a href='f80750cb960deed739c20c7c983792eb.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(LinkedList→AbstractList)</a></li>
         
     </ul>
 </section>
