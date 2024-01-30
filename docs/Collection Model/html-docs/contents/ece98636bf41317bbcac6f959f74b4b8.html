@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/icon-font/icons.css">
+<script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+<script type="text/javascript" src="../assets/js/imageMapResizer.min.js"></script>
+
+  </head>
+  <body>
+    <div>
+
+      <!-- Name Title -->
+
+      <h1>List</h1>
+
+      <!-- Type and Stereotype -->
+
+      <section style="margin-top: .5em;">
+        <span class="alert alert-info">
+          <span class="node-icon staruml-icon icon-UMLInterface"></span>
+          UMLInterface
+        </span>
+        
+      </section>
+
+      <!-- Path -->
+
+      <section style="margin-top: 10px">
+        
+        
+        
+          
+          <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>Collection</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='594af663de577680f35b13183109d675.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Model</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='7d78468b5f0914e2b400224e11c042c7.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>util</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='3115538024e60b0be1b62cd22069363b.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>List</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='ece98636bf41317bbcac6f959f74b4b8.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>List</a></span>
+        
+      </section>
+
+      <!-- Diagram -->
+
+      
+
+      <!-- Description -->
+
+      
+      <section>
+        <h3>Description</h3>
+        <div>
+          
+            <p>Represents a generic list data structure.</p>
+          
+        </div>
+      </section>
+      
+
+      <!-- Specification -->
+
+      
+
+      <!-- Directed Relationship -->
+
+      
+
+      <!-- Undirected Relationship -->
+
+      
+
+      <!-- Classifier -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Interface -->
+
+      
+        
+        
+<section class="element-list">
+    <h3>Implementing Classifiers</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='01b1b25f846ced953550eeed61469cc1.html'><span class='node-icon staruml-icon icon-UMLClass'></span>AbstractList</a></li>
+        
+    </ul>
+</section>
+
+
+      
+
+      <!-- Component -->
+
+      
+
+      <!-- Node -->
+
+      
+
+      <!-- Actor -->
+
+      
+
+      <!-- Use Case -->
+
+      
+
+      <!-- Template Parameters -->
+
+      
+
+      <!-- Literals -->
+
+      
+
+      <!-- Attributes -->
+
+      
+
+      <!-- Operations -->
+
+      
+      <section>
+        <h3>Operations</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="85ab41956387e9871caac03158b4c539.html">add(element: E): boolean</a></td>
+            <td><p>Appends the specified element to the end of this list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="068511c175914e314e67273c9835c1cc.html">add(array: E[1..*]): boolean</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3598e25476d9f04e6029ce50aa5f0aa0.html">add(collection: Collection&lt;E&gt;): boolean</a></td>
+            <td><p>Appends all of the elements in the specified collection to the end of this list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="00c3c9934fbd46f2124f51b4554077cc.html">addFirst(element: E): boolean</a></td>
+            <td><p>Appends the specified element at the beginning of this list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="1867f61eb68805539ab47d4cf6aa8a58.html">addFirst(array: E[1..*]): boolean</a></td>
+            <td><p>Appends all of the elements in the specified array at the beginning of this list, in the order that they are returned by the specified collection&#39;s iterator.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="6ee0c0e98044df8787da4f795c205500.html">addFirst(collection: Collection&lt;E&gt;): boolean</a></td>
+            <td><p>Appends all of the elements in the specified collection at the beginning of this list, in the order that they are returned by the specified collection&#39;s iterator.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="4539ce54c88206d982b433b2d1b6d98c.html">peek(): E</a></td>
+            <td><p>Retrieves, but does not remove, the head (first element) of this list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="f93440ae88cf2cac6cdbf0d6ffe6c913.html">peekLast(): E</a></td>
+            <td><p>Retrieves, but does not remove, the last element of this list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="04d83b1ecda7cc19a4faa6ec1d1247e5.html">peekArray(n int): E[0..*]</a></td>
+            <td><p>Retrieves, but does not remove, the first n elements of the list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="47beae998a4d779bb0a46410b0dd784c.html">peekLastArray(n: int): E[0..*]</a></td>
+            <td><p>Retrieves, but does not remove, the last n elements of the list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="31858884bffa0b64cdfc207f15bd8175.html">peekCollection(n: int): List&lt;E&gt;</a></td>
+            <td><p>Retrieves, but does not remove, the first n elements of the list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="eb17fef28f776c63f1220dc118b1920a.html">peekLastCollection(n: int): List&lt;E&gt;</a></td>
+            <td><p>Retrieves, but does not remove, the last n elements of the list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3dfbd68e32d102b58b75be4480ab3145.html">poll(): E</a></td>
+            <td><p>Retrieves and removes the head (first element) of this list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="4a53128400e3188139b62b094fdbc069.html">pollLast(): E</a></td>
+            <td><p>Retrieves and removes the last element of this list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="54382b629cbfecb7a8eaef8f05f26315.html">pollArray(n: int): E[0..*]</a></td>
+            <td><p>Retrieves and removes the first n elements of the list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="5c1ce9b86962e4c08483aea2a23e11a1.html">pollLastArray(n: int): E[0..*]</a></td>
+            <td><p>Retrieves and removes the last n elements of the list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="772f55bcaea04279b02bbd936ac0a50d.html">pollCollection(n: int): List&lt;E&gt;</a></td>
+            <td><p>Retrieves and removes the first n elements of the list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="b611d2351947014d8ac2774c4af20de0.html">pollLastCollection(n: int): List&lt;E&gt;</a></td>
+            <td><p>Retrieves and removes the last n elements of the list.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3e7fc9ce7110149c4bc13fab3e932d5d.html">remove(element: E): boolean</a></td>
+            <td><p>Removes the first occurrence of the specified element from this list, if it is present.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="2412c32ad4e5e4d4e335dd04fdf05e5a.html">remove(array: E[1..*]): boolean</a></td>
+            <td><p>Removes from this list all of its elements that are contained in the specified collection.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="8121edd39d341a8fec830084dc8c5759.html">remove(collection: Collection&lt;E&gt;): boolean</a></td>
+            <td><p>Removes from this list all of its elements that are contained in the specified collection.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="a02fce757b02eda21dd0440f23f76104.html">remove(filter: Predicate&lt;E&gt;): boolean</a></td>
+            <td><p>Removes all of the elements of this list that satisfy the given predicate. Errors or runtime exceptions thrown during iteration or by the predicate are relayed to the caller.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="f0ceb7ece23bce5f55d232290568818f.html">replace(element: E, newElement: E, comparator: Predicate&lt;E&gt;): boolean</a></td>
+            <td><p>Replaces each element of this list with the result of applying the function to that element.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="014d05b2200175f94f037b843edfbdc3.html">replace(array: E[1..*], newArray: E[1..*], comparator: Predicate&lt;E&gt;): boolean</a></td>
+            <td><p>Replaces each element of this list with the result of applying the function to that element.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="c4372986bbf23e61ef61513043680cab.html">replace(collection: Collection&lt;E&gt;, newCollection: Collection&lt;E&gt;, comparator: Predicate&lt;E&gt;): boolean</a></td>
+            <td><p>Replaces each element of this list with the result of applying the function to that element.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="189703abc88c1dba95b49231d826df1b.html">retain(array: E[1..*]): boolean</a></td>
+            <td><p>Retains only the elements in this list that are contained in the specified collection.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="395df671cf55d0f92b9bb0551eb3a6fe.html">retain(collection: Collection&lt;E&gt;): boolean</a></td>
+            <td><p>Retains only the elements in this list that are contained in the specified collection.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="2a1a04d6391b50a441f621495f78f05d.html">set(index: E, element: E): boolean</a></td>
+            <td><p>Replaces the specified element by a new element in this list. Only the first occurrence is replaced.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="f997e0377aa241cab775b5c2ddd69729.html">sort(toInt: ToIntFunction&lt;E&gt;): boolean</a></td>
+            <td><p>Sorts this list according to the order induced by the specified Comparator.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="6e87334bf9063ea05fd8670af0a17dad.html">subList(from: E, to: E): List&lt;E&gt;</a></td>
+            <td><p>Returns a sub list of this list between the specified &quot;from&quot; and &quot;to&quot;.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="d4810775eb6b08671867a1009dad85e2.html">toArray(): E[0..*]</a></td>
+            <td><p>Returns an array containing all of the elements in this list.</p></td>
+          </tr>
+          
+        </table>
+      </section>
+      
+
+      <!-- Receptions -->
+
+      
+
+      <!-- Extension Points -->
+
+      
+
+      <!-- Parameters -->
+
+      
+
+      <!-- Diagrams -->
+
+      
+      
+
+      <!-- Behavior -->
+
+      
+
+      <!-- Action -->
+
+      
+
+      <!-- Interaction -->
+
+      
+
+      <!-- CombinedFragment -->
+
+      
+
+      <!-- Activity -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State -->
+
+      
+
+      <!-- Vertex -->
+
+      
+
+      <!-- Transition -->
+
+      
+
+      <!-- Data Model (ERD) -->
+
+      
+
+      <!-- Columns (ERD) -->
+
+      
+
+      <!-- Related Entities (ERD) -->
+
+      
+
+      <!-- Data Flows (DFD) -->
+
+      
+
+      <!-- Flows (Flowchart) -->
+
+      
+
+      <!-- Properties -->
+
+      <section>
+        <h3>Properties</h3>
+        
+        <table class="table table-striped table-bordered">
+    <tr>
+        <th width="50%">Name</th>
+        <th width="50%">Value</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>name</td>
+        <td>List</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>stereotype</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>visibility</td>
+        <td>public</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>isAbstract</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isFinalSpecialization</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isLeaf</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+</table>                
+
+      </section>
+
+      <!-- Tags -->
+
+      
+
+      <!-- Constraints, Dependencies, Dependants -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+<section class="element-list">
+    <h3>Dependants</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='01b1b25f846ced953550eeed61469cc1.html'><span class='node-icon staruml-icon icon-UMLClass'></span>AbstractList</a></li>
+        
+    </ul>
+</section>
+
+
+      
+
+      <!-- Relationships -->
+
+      
+      
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='89d5d9b281d5ef08df20fa3b4ce38414.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(AbstractList→List)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Owned Elements -->
+
+      
+      
+
+
+      <!-- Image Map Resizer (https://github.com/davidjbradshaw/image-map-resizer) -->
+      <script>
+      imageMapResize();
+      </script>
+    </div>
+  </body>
+</html>
