@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>n</title>
+    <title></title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,15 +19,17 @@
 
       <!-- Name Title -->
 
-      <h1>n</h1>
+      <h1>(unnamed)</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLParameter"></span>
-          UMLParameter
+          <span class="node-icon staruml-icon icon-UMLAssociationEnd"></span>
+          UMLAssociationEnd
         </span>
+        
+          <span style="margin-left: 10px" class="alert alert-info">«»</span>
         
       </section>
 
@@ -44,19 +46,22 @@
           <span class="label label-info"><a href='594af663de577680f35b13183109d675.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Model</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='7d78468b5f0914e2b400224e11c042c7.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>util</a></span>
+          <span class="label label-info"><a href='7c977bb66eca3eea20e823b1d4d1cfdb.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>linkedlist</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='3115538024e60b0be1b62cd22069363b.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>list</a></span>
+          <span class="label label-info"><a href='7d7e8784b03b1a31ab9deb7b36cb2e51.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>node</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='ece98636bf41317bbcac6f959f74b4b8.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>List</a></span>
+          <span class="label label-info"><a href='9d0a988ff7f9ae4c2dbdd27c82c4f68b.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>singly</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='b611d2351947014d8ac2774c4af20de0.html'><span class='node-icon staruml-icon icon-UMLOperation'></span>pollLastCollection</a></span>
+          <span class="label label-info"><a href='d3d69b86ae6ca4edd7e7e719e1b90a72.html'><span class='node-icon staruml-icon icon-UMLClass'></span>LinkedNode</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='914de5c273fc43943c724eec6288fd1e.html'><span class='node-icon staruml-icon icon-UMLParameter'></span>n</a></span>
+          <span class="label label-info"><a href='7b25bd9e618b406b03a257326d984248.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(LinkedNode—LinkedList)</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='e2043958f2b722b79ad079976e8b6346.html'><span class='node-icon staruml-icon icon-UMLAssociationEnd'></span>(AssociationEnd)</a></span>
         
       </section>
 
@@ -71,7 +76,7 @@
         <h3>Description</h3>
         <div>
           
-            <p>The number of elements to get.</p>
+            <span class="label label-info">none</span>
           
         </div>
       </section>
@@ -225,7 +230,7 @@
     
     <tr>
         <td>name</td>
-        <td>n</td>
+        <td></td>
     </tr>
     
     
@@ -239,8 +244,17 @@
     
     
     <tr>
+        <td>reference</td>
+        <td><a href='d3d69b86ae6ca4edd7e7e719e1b90a72.html'><span class='node-icon staruml-icon icon-UMLClass'></span>LinkedNode</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
         <td>stereotype</td>
-        <td><span class='label label-info'>null</span></td>
+        <td></td>
     </tr>
     
     
@@ -256,11 +270,9 @@
     
     
     
-    
-    
     <tr>
-        <td>isStatic</td>
-        <td><span class='label label-info'>false</span></td>
+        <td>navigable</td>
+        <td>unspecified</td>
     </tr>
     
     
@@ -268,26 +280,8 @@
     
     
     <tr>
-        <td>isLeaf</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>featureDirection</td>
-        <td>provided</td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>type</td>
-        <td>int</td>
+        <td>aggregation</td>
+        <td>none</td>
     </tr>
     
     
@@ -296,6 +290,15 @@
     
     <tr>
         <td>multiplicity</td>
+        <td>1</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>defaultValue</td>
         <td></td>
     </tr>
     
@@ -331,8 +334,8 @@
     
     
     <tr>
-        <td>defaultValue</td>
-        <td></td>
+        <td>isDerived</td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     
@@ -340,8 +343,28 @@
     
     
     <tr>
-        <td>direction</td>
-        <td>in</td>
+        <td>isID</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>qualifiers</td>
+        <td>
+            
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>ownerAttribute</td>
+        <td><span class='label label-info'>null</span></td>
     </tr>
     
     
@@ -355,18 +378,6 @@
       
 
       <!-- Constraints, Dependencies, Dependants -->
-
-      
-        
-        
-
-
-        
-        
-
-
-        
-        
 
       
 
