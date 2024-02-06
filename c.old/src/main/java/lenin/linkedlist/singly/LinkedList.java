@@ -1,6 +1,5 @@
 package lenin.linkedlist.singly;
 
-import java.util.NoSuchElementException;
 import java.util.function.Function;
 
 import lenin.linkedlist.node.singly.LinkedNode;
@@ -84,6 +83,12 @@ public class LinkedList<E> extends AbstractList<E> {
   }
 
   @Override
+  public int size() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'size'");
+  }
+
+  @Override
   public void forEach(Function<E, Void> action) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'forEach'");
@@ -91,21 +96,8 @@ public class LinkedList<E> extends AbstractList<E> {
 
   @Override
   public Iterator<E> iterator() {
-    inode = head;  
-    return new Iterator<E>() {
-      public boolean hasNext() {
-        return inode != null;
-      }
-
-      public E next() {
-        if(!hasNext()) {
-          throw new NoSuchElementException("No more elements in the list.");
-        }
-        E element = inode.get();
-        inode = inode.getNext();
-        return element;
-      }
-    };
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'iterator'");
   }
 
 }

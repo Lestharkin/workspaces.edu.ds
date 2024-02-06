@@ -1,51 +1,17 @@
-package lenin.linkedlist.singly;
+package lenin.array;
 
-import java.util.NoSuchElementException;
 import java.util.function.Function;
 
-import lenin.linkedlist.node.singly.LinkedNode;
+import lenin.util.array.AbstractArray;
 import lenin.util.collection.Collection;
 import lenin.util.iterator.Iterator;
-import lenin.util.list.AbstractList;
 
-public class LinkedList<E> extends AbstractList<E> {
-
-  private LinkedNode<E> head;
-  private LinkedNode<E> tail;
-  private LinkedNode<E> inode;
-
-  public LinkedList() {
-    super();
-    head = null;
-    tail = null;
-    inode = null;
-  }
-
-  public LinkedList(E element) {
-    super();
-    add(element);
-  }
+public class Array<E> extends AbstractArray<E> {
 
   @Override
   public boolean add(E element) {
-    try {
-      LinkedNode<E> node = new LinkedNode<>(element);
-      if (isEmpty()) {
-        head = node;
-        tail = node;
-        size++;
-      } else {
-        tail.setNext(node);
-        tail = node;
-        size++;
-      }
-      return true;
-    } catch (Exception e) {
-      System.err.println(e.getMessage());
-    }
-    return false;
-    
-
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'add'");
   }
 
   @Override
@@ -74,13 +40,20 @@ public class LinkedList<E> extends AbstractList<E> {
 
   @Override
   public boolean isEmpty() {
-    return head == null && tail == null && inode == null && size == 0;
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'isEmpty'");
   }
 
   @Override
   public boolean reverse() {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'reverse'");
+  }
+
+  @Override
+  public int size() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'size'");
   }
 
   @Override
@@ -91,21 +64,8 @@ public class LinkedList<E> extends AbstractList<E> {
 
   @Override
   public Iterator<E> iterator() {
-    inode = head;  
-    return new Iterator<E>() {
-      public boolean hasNext() {
-        return inode != null;
-      }
-
-      public E next() {
-        if(!hasNext()) {
-          throw new NoSuchElementException("No more elements in the list.");
-        }
-        E element = inode.get();
-        inode = inode.getNext();
-        return element;
-      }
-    };
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'iterator'");
   }
-
+  
 }
