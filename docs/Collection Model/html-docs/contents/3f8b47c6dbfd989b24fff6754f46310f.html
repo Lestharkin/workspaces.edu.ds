@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>AbstractList</title>
+    <title></title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,15 +19,17 @@
 
       <!-- Name Title -->
 
-      <h1>AbstractList</h1>
+      <h1>(unnamed)</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLClass"></span>
-          UMLClass
+          <span class="node-icon staruml-icon icon-UMLAssociationEnd"></span>
+          UMLAssociationEnd
         </span>
+        
+          <span style="margin-left: 10px" class="alert alert-info">«»</span>
         
       </section>
 
@@ -44,13 +46,22 @@
           <span class="label label-info"><a href='594af663de577680f35b13183109d675.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Model</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='7d78468b5f0914e2b400224e11c042c7.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>util</a></span>
+          <span class="label label-info"><a href='7c977bb66eca3eea20e823b1d4d1cfdb.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>linkedlist</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='3115538024e60b0be1b62cd22069363b.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>list</a></span>
+          <span class="label label-info"><a href='7d7e8784b03b1a31ab9deb7b36cb2e51.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>node</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='01b1b25f846ced953550eeed61469cc1.html'><span class='node-icon staruml-icon icon-UMLClass'></span>AbstractList</a></span>
+          <span class="label label-info"><a href='9d0a988ff7f9ae4c2dbdd27c82c4f68b.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>singly</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='d3d69b86ae6ca4edd7e7e719e1b90a72.html'><span class='node-icon staruml-icon icon-UMLClass'></span>LinkedNode</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='9ec1c93a2872e33deefd7a678a31bfd1.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>next (LinkedNode—LinkedNode)</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='3f8b47c6dbfd989b24fff6754f46310f.html'><span class='node-icon staruml-icon icon-UMLAssociationEnd'></span>(AssociationEnd)</a></span>
         
       </section>
 
@@ -84,59 +95,6 @@
       
 
       <!-- Classifier -->
-
-      
-        
-        
-<section class="element-list">
-    <h3>Generalized Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='6681728ce349dfc1be11802b6a2a295b.html'><span class='node-icon staruml-icon icon-UMLClass'></span>AbstractCollection</a></li>
-        
-    </ul>
-</section>
-
-
-
-        
-        
-<section class="element-list">
-    <h3>Specialized Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='61eb76f4aca99b8869a52e1abd13daa6.html'><span class='node-icon staruml-icon icon-UMLClass'></span>LinkedList</a></li>
-        
-        <li><a href='3f5f3fa0d178937cf938b255e5e8047c.html'><span class='node-icon staruml-icon icon-UMLClass'></span>LinkedList</a></li>
-        
-        <li><a href='60563d68b2a1098449d27c99507c6240.html'><span class='node-icon staruml-icon icon-UMLClass'></span>LinkedList</a></li>
-        
-        <li><a href='bb57df679c998c17a6ac1a252107213f.html'><span class='node-icon staruml-icon icon-UMLClass'></span>LinkedList</a></li>
-        
-    </ul>
-</section>
-
-
-
-        
-        
-<section class="element-list">
-    <h3>Interfaces</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='ece98636bf41317bbcac6f959f74b4b8.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>List</a></li>
-        
-    </ul>
-</section>
-
-
-
-        
-        
-
-
-        
-        
 
       
 
@@ -272,7 +230,7 @@
     
     <tr>
         <td>name</td>
-        <td>AbstractList</td>
+        <td></td>
     </tr>
     
     
@@ -286,8 +244,17 @@
     
     
     <tr>
+        <td>reference</td>
+        <td><a href='d3d69b86ae6ca4edd7e7e719e1b90a72.html'><span class='node-icon staruml-icon icon-UMLClass'></span>LinkedNode</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
         <td>stereotype</td>
-        <td><span class='label label-info'>null</span></td>
+        <td></td>
     </tr>
     
     
@@ -303,19 +270,9 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <tr>
-        <td>isAbstract</td>
-        <td><span class='label label-info'>true</span></td>
+        <td>navigable</td>
+        <td>unspecified</td>
     </tr>
     
     
@@ -323,7 +280,34 @@
     
     
     <tr>
-        <td>isFinalSpecialization</td>
+        <td>aggregation</td>
+        <td>none</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>multiplicity</td>
+        <td>1</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>defaultValue</td>
+        <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isReadOnly</td>
         <td><span class='label label-info'>false</span></td>
     </tr>
     
@@ -332,7 +316,7 @@
     
     
     <tr>
-        <td>isLeaf</td>
+        <td>isOrdered</td>
         <td><span class='label label-info'>false</span></td>
     </tr>
     
@@ -341,8 +325,46 @@
     
     
     <tr>
-        <td>isActive</td>
+        <td>isUnique</td>
         <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isDerived</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isID</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>qualifiers</td>
+        <td>
+            
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>ownerAttribute</td>
+        <td><span class='label label-info'>null</span></td>
     </tr>
     
     
@@ -358,68 +380,17 @@
       <!-- Constraints, Dependencies, Dependants -->
 
       
-        
-        
-
-
-        
-        
-<section class="element-list">
-    <h3>Dependencies</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='ece98636bf41317bbcac6f959f74b4b8.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>List</a></li>
-        
-    </ul>
-</section>
-
-
-
-        
-        
-
-      
 
       <!-- Relationships -->
 
       
       
-<section class="element-list">
-    <h3>Relationships</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='89d5d9b281d5ef08df20fa3b4ce38414.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(AbstractList→List)</a></li>
-        
-        <li><a href='01c617ae7938037ab14ffd3477d1097c.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(AbstractList→AbstractCollection)</a></li>
-        
-        <li><a href='f80750cb960deed739c20c7c983792eb.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(LinkedList→AbstractList)</a></li>
-        
-        <li><a href='bbfcc23925d57f6a780ea387f8def167.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(LinkedList→AbstractList)</a></li>
-        
-        <li><a href='c673622bccb4011b0725441d7531a3a0.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(LinkedList→AbstractList)</a></li>
-        
-        <li><a href='dc34812a819ca0297e7f5bd1292e5de1.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(LinkedList→AbstractList)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Owned Elements -->
 
       
       
-<section class="element-list">
-    <h3>Owned Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='89d5d9b281d5ef08df20fa3b4ce38414.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(AbstractList→List)</a></li>
-        
-        <li><a href='01c617ae7938037ab14ffd3477d1097c.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(AbstractList→AbstractCollection)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Image Map Resizer (https://github.com/davidjbradshaw/image-map-resizer) -->
