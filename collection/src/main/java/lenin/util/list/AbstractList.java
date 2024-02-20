@@ -1,8 +1,8 @@
 package lenin.util.list;
 
-import lenin.util.collection.Collection;
+import lenin.util.collection.AbstractCollection;
 
-public abstract class AbstractList<E> implements List<E>, Collection<E>, Cloneable {
+public abstract class AbstractList<E> extends AbstractCollection<E> implements List<E> {
 
   protected int size;
 

@@ -4,10 +4,19 @@ import java.util.function.Function;
 
 import lenin.util.iterator.Iterator;
 
-public interface Iterable<E> {
-  
+public interface Iterable<E> {  
 
-  public void forEach(Function<E, Void> action);
+  /**
+   * For each element in the iterator, executes the specified action.
+   *
+   * @param action the action to be executed on each element.
+   */
+  void forEach(Function<E, Void> action);
 
-  public Iterator<E> iterator();
+  /**
+   * Gets an iterator over the elements in the iterator.
+   *
+   * @return an iterator over the elements in the iterator.
+   */
+  Iterator<E> iterator();
 }
