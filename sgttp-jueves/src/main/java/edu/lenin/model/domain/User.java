@@ -1,7 +1,5 @@
 package edu.lenin.model.domain;
 
-import com.lestharkin.io.array.Array;
-
 public class User {
 
   private String username;
