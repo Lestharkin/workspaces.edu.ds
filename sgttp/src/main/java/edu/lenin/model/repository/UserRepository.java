@@ -16,11 +16,13 @@ public class UserRepository {
 
   public User getUser(String username) {
     UserEntity[] userEntities = fileJson.getObjects(pathFile, UserEntity[].class);
+    EmployeeRepository employeeRepository = new EmployeeRepository("../../databas/employees.json");
     for (UserEntity userEntity : userEntities) {
       if (userEntity.username.equals(username)) {
-        return new User(userEntity.username, userEntity.password, );
+        return new User(employeeRepository.getEmployee(userEntity.person), userEntity.username, userEntity.password);
       }
     }
+    return User.getNullUser();
   }
   
 }
