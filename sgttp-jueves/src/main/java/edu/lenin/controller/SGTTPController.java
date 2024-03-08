@@ -14,7 +14,7 @@ public class SGTTPController {
   }
 
   public void start() {
-    this.view.init(this.model.getTitle());
+    this.model.deploy();
   }
   
 }
