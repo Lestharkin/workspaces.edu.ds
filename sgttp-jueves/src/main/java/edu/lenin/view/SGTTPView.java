@@ -31,6 +31,7 @@ public class SGTTPView {
     panelConsole.add(console);
     panelConsole.setLayout(new GridLayout(1, 1));
     panelButton.setLayout(new GridLayout(3, 3));
+
     startButton(fn);
 
     frame.setSize(400, 200);
@@ -53,10 +54,9 @@ public class SGTTPView {
     }
   }
 
-  public void init(String title) {
-    System.out.println("************************************");
-    System.out.println("SGTTPView: " + title);
-    System.out.println("************************************");
+  public void showServerStatus(String status) {
+    button.setText(status);
+    button.setEnabled(false);
   }
   
 }

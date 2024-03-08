@@ -7,6 +7,8 @@ import edu.lenin.model.repository.UserRepository;
 
 public class LoginManager extends UnicastRemoteObject implements LoginManagerSkeleton {
 
+  private static final long serialVersionUID = 123L;  
+
   public LoginManager() throws RemoteException {
     super();
   }
