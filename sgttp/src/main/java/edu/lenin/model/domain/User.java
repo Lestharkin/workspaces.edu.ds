@@ -3,12 +3,12 @@ package edu.lenin.model.domain;
 public class User {
 
   private AbstractPerson person;
-  private String userName;
+  private String username;
   private String password;
 
-  public User(AbstractPerson person, String userName, String password) {
+  public User(AbstractPerson person, String username, String password) {
     this.person = person;
-    this.userName = userName;
+    this.username = username;
     this.password = password;
   }
   public AbstractPerson getPerson() {
@@ -17,11 +17,11 @@ public class User {
   public void setPerson(AbstractPerson person) {
     this.person = person;
   }
-  public String getUserName() {
-    return userName;
+  public String getUsername() {
+    return username;
   }
-  public void setUserName(String userName) {
-    this.userName = userName;
+  public void setUsername(String username) {
+    this.username = username;
   }
   public String getPassword() {
     return password;

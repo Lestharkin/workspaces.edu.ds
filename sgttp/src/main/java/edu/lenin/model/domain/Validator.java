@@ -2,8 +2,12 @@ package edu.lenin.model.domain;
 
 public class Validator {
 
-  public validateLogin(String userName, String password) {
-    // TODO: implement this method
+  public boolean validateLogin(String username, String password) {
+    User user = new User();
+    if (user.getPassword().equals(password)){
+      return true;
+    }
+    return false;
   }
   
 }
