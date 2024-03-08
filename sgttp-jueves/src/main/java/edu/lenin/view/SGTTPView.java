@@ -10,14 +10,20 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
-public class SGTTPView {
+import edu.lenin.model.messenger.Messenger;
+import edu.lenin.model.observer.Observer;
+
+public class SGTTPView extends Observer<Messenger> {
   private JFrame frame;
   private JButton button;
   private JPanel panelButton;
   private JPanel panelConsole;
   private JLabel console;
 
-  public SGTTPView(String title) {
+  public SGTTPView(String title, Messenger messenger) {
+    super(messenger);
+    subject.attach(this);
+    
     frame = new JFrame(title);
     button = new JButton("Start Server");
     panelButton = new JPanel();
@@ -57,6 +63,11 @@ public class SGTTPView {
   public void showServerStatus(String status) {
     button.setText(status);
     button.setEnabled(false);
+  }
+
+  @Override
+  public void update() {
+    console.setText("Server Status: " + subject.getMessage());
   }
   
 }

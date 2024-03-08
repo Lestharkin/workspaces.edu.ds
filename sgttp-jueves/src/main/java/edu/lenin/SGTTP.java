@@ -19,7 +19,7 @@ public class SGTTP {
                     (String) config.get("IP"),
                     (String) config.get("PORT"),
                     (String) config.get("SERVICE_NAME"));
-            SGTTPController controller = new SGTTPController(model, new SGTTPView("SGTTP Server"));
+            SGTTPController controller = new SGTTPController(model, new SGTTPView("SGTTP Server", model.getMessenger()));
             controller.start();
         } catch (Exception e) {
             Logger.getLogger("AuthServer").log(Level.WARNING, e.getMessage(), e);

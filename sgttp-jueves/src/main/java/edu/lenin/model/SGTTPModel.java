@@ -5,6 +5,7 @@ import java.rmi.registry.LocateRegistry;
 
 import edu.lenin.model.domain.LoginManager;
 import edu.lenin.model.domain.LoginManagerSkeleton;
+import edu.lenin.model.messenger.Messenger;
 
 public class SGTTPModel {
 
@@ -12,6 +13,7 @@ public class SGTTPModel {
   private String port;
   private String serviceName;
   private String uri;
+  private Messenger messenger;
 
   public SGTTPModel(String ip, String port, String serviceName) {
     this.ip = ip;
@@ -19,6 +21,7 @@ public class SGTTPModel {
     this.serviceName = serviceName;
     // "//192.168.0.1:1802/service"
     this.uri = "//" + this.ip + ":" + this.port + "/" + this.serviceName;
+    this.messenger = new Messenger("Server Status: Stopped"); 
   }
 
   public boolean deploy() {
@@ -27,11 +30,16 @@ public class SGTTPModel {
       LoginManagerSkeleton loginManagerService = new LoginManager();   
       LocateRegistry.createRegistry(Integer.parseInt(port));
       Naming.rebind(uri, loginManagerService);
+      messenger.setMessage("Server Status: Running");
       return true;
     } catch (Exception e) {
       e.printStackTrace();
     }
     return false;
+  }
+
+  public Messenger getMessenger() {
+    return messenger;
   }
   
 }
