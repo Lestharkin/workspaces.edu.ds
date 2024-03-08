@@ -1,11 +1,13 @@
 package edu.lenin.model.repository;
 
+import java.io.Serializable;
+
 import edu.lenin.model.domain.Employee;
 import edu.lenin.model.domain.User;
 import edu.lenin.shared.filejsonadpater.FileJsonAdapter;
 import edu.lenin.shared.filejsonadpater.FileJsonInterface;
 
-public class UserRepository {
+public class UserRepository implements Serializable {
   
   private FileJsonInterface<UserEntity> fileJson;
   private String pathFile;

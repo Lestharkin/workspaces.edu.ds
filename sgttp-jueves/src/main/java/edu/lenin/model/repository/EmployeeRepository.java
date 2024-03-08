@@ -1,13 +1,14 @@
 package edu.lenin.model.repository;
 
+import java.io.Serializable;
+
 import com.lestharkin.io.array.Array;
 
 import edu.lenin.model.domain.Employee;
-import edu.lenin.model.domain.User;
 import edu.lenin.shared.filejsonadpater.FileJsonAdapter;
 import edu.lenin.shared.filejsonadpater.FileJsonInterface;
 
-public class EmployeeRepository {
+public class EmployeeRepository implements Serializable {
   private FileJsonInterface<EmployeeEntity> fileJson;
   private String pathFile;
 

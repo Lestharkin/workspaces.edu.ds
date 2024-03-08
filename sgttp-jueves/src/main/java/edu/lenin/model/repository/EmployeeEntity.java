@@ -1,6 +1,8 @@
 package edu.lenin.model.repository;
 
-public class EmployeeEntity {
+import java.io.Serializable;
+
+public class EmployeeEntity implements Serializable {
   String id;
   String names;
   String lastNames;

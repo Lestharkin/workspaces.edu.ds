@@ -1,15 +1,18 @@
 package edu.lenin.model.domain;
 
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
 import edu.lenin.model.repository.UserRepository;
 
-public class LoginManager {
-  private UserRepository userRepository;
+public class LoginManager extends UnicastRemoteObject implements LoginManagerSkeleton {
 
-  public LoginManager(UserRepository userRepository) {
-    this.userRepository = userRepository;
+  public LoginManager() throws RemoteException {
+    super();
   }
   
-  public boolean login(String username, String password) {
+  public boolean login(String username, String password) throws RemoteException {
+    UserRepository userRepository = new UserRepository("../../database/user.json");
     User user = userRepository.getUser(username);
     if (user.equals(User.getNullUser())) {
       return false;

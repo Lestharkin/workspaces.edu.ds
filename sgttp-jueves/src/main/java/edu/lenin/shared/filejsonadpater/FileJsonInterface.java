@@ -1,6 +1,8 @@
 package edu.lenin.shared.filejsonadpater;
 
-public interface FileJsonInterface<E> {
+import java.io.Serializable;
+
+public interface FileJsonInterface<E> extends Serializable {
   E getObject(String pathFile, Class<E> classOfT);
 
   E[] getObjects(String pathFile, Class<E[]> classOfT);

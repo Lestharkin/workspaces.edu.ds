@@ -1,6 +1,8 @@
 package edu.lenin.model.repository;
 
-public class UserEntity {
+import java.io.Serializable;
+
+public class UserEntity implements Serializable {
   String person;
   String username;
   String password;
