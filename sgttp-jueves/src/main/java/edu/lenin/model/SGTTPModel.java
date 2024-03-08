@@ -13,20 +13,20 @@ public class SGTTPModel {
   private String serviceName;
   private String uri;
 
-  public SGTTPModel(String ip, String port, String serviceName)  {
+  public SGTTPModel(String ip, String port, String serviceName) {
     this.ip = ip;
     this.port = port;
     this.serviceName = serviceName;
-    // "//92.168.0.1:1802/service"
+    // "//192.168.0.1:1802/service"
     this.uri = "//" + this.ip + ":" + this.port + "/" + this.serviceName;
   }
 
   public boolean deploy() {
     try {
       System.setProperty("java.rmi.server.hostname", ip);
-      LoginManagerSkeleton service = new LoginManager();   
+      LoginManagerSkeleton loginManagerService = new LoginManager();   
       LocateRegistry.createRegistry(Integer.parseInt(port));
-      Naming.rebind(uri, service);
+      Naming.rebind(uri, loginManagerService);
       return true;
     } catch (Exception e) {
       e.printStackTrace();
