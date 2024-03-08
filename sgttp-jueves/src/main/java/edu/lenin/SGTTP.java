@@ -13,7 +13,7 @@ import edu.lenin.view.SGTTPView;
 public class SGTTP {
     public static void main(String[] args) {
         Properties config = new Properties();
-        try (FileInputStream fin = new FileInputStream(new File("/home/lestharkin/Projects/Lectures/Datastructures/Java/2025/issues/sgttp-1.0.20240221/server/config.properties"))) {
+        try (FileInputStream fin = new FileInputStream(new File("/home/lestharkin/Projects/Workspaces/edu/ds/sgttp-jueves/config.properties"))) {
             config.load(fin);
             SGTTPModel model = new SGTTPModel(
                     (String) config.get("IP"),
