@@ -26,7 +26,7 @@ public class SGTTPClient {
             SGTTPClientController controller = new SGTTPClientController(model, new SGTTPClientView());
             controller.start();
         } catch (Exception e) {
-            Logger.getLogger("AuthServer").log(Level.WARNING, e.getMessage(), e);
+            Logger.getLogger("AuthClient").log(Level.WARNING, e.getMessage(), e);
         }
     }
 }
