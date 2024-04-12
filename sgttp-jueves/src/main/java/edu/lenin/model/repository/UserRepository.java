@@ -19,7 +19,7 @@ public class UserRepository implements Serializable {
 
   public User getUser(String username) {
     UserEntity[] userEntities = fileJson.getObjects(pathFile, UserEntity[].class);
-    EmployeeRepository employeeRepository = new EmployeeRepository("../../database/employee.json");
+    EmployeeRepository employeeRepository = new EmployeeRepository("../../../../database/employee.json");
     for (UserEntity userEntity : userEntities) {
       if (userEntity.username.equals(username)) {
         Employee employee = employeeRepository.getEmployee(userEntity.person);

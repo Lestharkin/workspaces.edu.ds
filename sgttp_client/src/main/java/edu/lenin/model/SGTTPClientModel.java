@@ -2,10 +2,10 @@ package edu.lenin.model;
 
 import java.rmi.Naming;
 
-import edu.lenin.model.domain.LoginManagerStub;
+import edu.lenin.model.domain.LoginManagerSkeleton;
 
 public class SGTTPClientModel {
-  LoginManagerStub loginManager;
+  LoginManagerSkeleton loginManager;
   String uri;
 
   public SGTTPClientModel(String ipService, String portService, String serviceName) {
@@ -14,7 +14,7 @@ public class SGTTPClientModel {
   
   public boolean login(String username, String password) {
     try {
-      loginManager = (LoginManagerStub) Naming.lookup(uri);
+      loginManager = (LoginManagerSkeleton) Naming.lookup(uri);
       return loginManager.login(username, password);
     } catch (Exception e) {
       e.printStackTrace();
